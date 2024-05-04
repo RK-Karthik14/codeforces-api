@@ -80,7 +80,7 @@ function extractNumericRating(text) {
 }
 
 app.get('/', (req, res) => {
-    res.status(200).send("Hi, you are at the right endpoint. Append /handle_of_user to the URL. For more information, visit the GitHub repo: https://github.com/deepaksuthar40128/Codechef-API. Thanks for 🌟");
+    res.status(200).send("Hi, you are at the right endpoint. Append /handle_of_user to the URL. For more information, visit the GitHub repo: https://github.com/RK-Karthik14/codeforces-api. Thanks for 🌟");
 });
 
 const PORT = process.env.PORT || 8800;
