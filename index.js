@@ -57,8 +57,8 @@ app.get('/:handle', async (req, res) => {
                 res.status(200).json({
                     success: true, 
                     curr_rating: ratings[0],
-                    max_raing: ratings[1],
-                    lat_visit: ratings[2],
+                    max_rating: ratings[1],
+                    last_visit: ratings[2],
                     registered: ratings[3],
                     tot_probs: ratings[4],
                     probs_last_month: ratings[5],
