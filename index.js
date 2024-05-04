@@ -61,7 +61,7 @@ app.get('/:handle', async (req, res) => {
                     last_visit: ratings[2],
                     registered: ratings[3],
                     tot_probs: ratings[4],
-                    probs_last_month: ratings[5],
+                    probs_last_month: ratings[6],
                 });
             } else {
                 res.status(404).json({ success: false, error: 'No ratings found' });
