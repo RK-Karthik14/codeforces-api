@@ -35,7 +35,13 @@ app.get('/:handle', async (req, res) => {
             userLastVisitElemts.forEach(element => {
                 if(element.textContent) {
                     const ratingText = element.textContent.trim();
-                    ratings.push(ratingText);
+                    if(userLastVisitElemts.length === 1){
+                        ratings.push("Online Now")
+                        rating.push(ratingText)
+                    }
+                    else{
+                        ratings.push(ratingText);
+                    }
                 }
             })
 
@@ -45,6 +51,7 @@ app.get('/:handle', async (req, res) => {
                     ratings.push(ratingText);
                 }
             })
+
 
             if (ratings.length > 0) {
                 res.status(200).json({
