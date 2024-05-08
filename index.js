@@ -37,7 +37,7 @@ app.get('/:handle', async (req, res) => {
                     const ratingText = element.textContent.trim();
                     if(userLastVisitElemts.length === 1){
                         ratings.push("Online Now")
-                        rating.push(ratingText)
+                        ratings.push(ratingText)
                     }
                     else{
                         ratings.push(ratingText);
